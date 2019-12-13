@@ -220,16 +220,6 @@ function spawnFood() {
     ctx.strokeRect(food.x, food.y, 10, 10);
     ctx.fillRect(food.x, food.y, 10, 10);
 }
-// Needs attention!
-function spawnBuffs() {
-    if (score % 10 === 0) {
-        ctx.fillStyle = 'red';
-        ctx.strokestyle = 'darkred';
-        ctx.strokeRect(food.x, food.y, 10, 10);
-        ctx.fillRect(food.x, food.y, 10, 10);
-
-    }
-}
 
 function renderLoss() {
     let body = document.body;
