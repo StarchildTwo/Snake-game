@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0
+}
+
+body {
+    display: flex;
+    background-color: rgb(176, 115, 219);
+    justify-content: center;
+}
+
+.side {
+    background-color: indigo;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#snake {
+
+    display: flex;
+    border: 4px solid rgb(255, 255, 255);
+    background-color: white;
+    align-self: center;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.75);
+
+}
+
+.start-btn {
+    height: 45px;
+    width: 155px;
+    border: none;
+    border-radius: 22.5px;
+    background-color: rgb(121, 230, 121);
+    color: black;
+    font-size: 20px;
+    outline: none;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.start-btn:hover {
+    cursor: pointer;
+    background-color: rgb(100, 207, 100);
+
+}
+
+.start-btn:active {
+    background-color: rgba(100, 207, 100, 0.39);
+
+}
+
+aside {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    margin-right: 15px;
+    width: 250px;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.75);
+}
+
+.choices {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+.score {
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.text-score {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+}
+
+.lossScreen {
+    position: absolute;
+    top: 40%;
+    left: calc(50% - 15px);
+    color: white;
+}
